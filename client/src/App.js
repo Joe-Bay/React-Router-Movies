@@ -4,7 +4,7 @@ import axios from 'axios';
 import SavedList from './Movies/SavedList';
 import MovieList from './Movies/MovieList'
 import Movie from './Movies/Movie'
-import { Switch, Link, Route} from 'react-router-dom'
+import { Switch, Route} from 'react-router-dom'
 
 const App = () => {
   const [saved, setSaved] = useState([]); // Stretch: the ids of "saved" movies

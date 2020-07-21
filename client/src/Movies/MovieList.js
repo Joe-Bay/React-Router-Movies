@@ -17,8 +17,9 @@ function MovieDetails({ movie }) {
   const { url } = useRouteMatch();
 
   return (
+    <Link to={`/movie/${movie.id}`}>
     <div className="movie-card">
-      <Link to={`/movie/${movie.id}`}>Details</Link>
+
       <h2>{title}</h2>
       <div className="movie-director">
         Director: <em>{director}</em>
@@ -27,6 +28,7 @@ function MovieDetails({ movie }) {
         Metascore: <strong>{metascore}</strong>
       </div>
     </div>
+    </Link>
 
   );
 }
